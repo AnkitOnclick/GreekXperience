@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [smoke-test-suite]" parallel="tests">
+  <parameter name="baseURL" value="https://qa1.greekxperience.com"/>
+  <parameter name="internal" value="false"/>
+  <parameter name="ReportLocation" value="reports"/>
+  <parameter name="remoteURL" value="http://localhost:4444/wd/hub"/>
+  <test name="FirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.greekxp.UniversityLogin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="testUniversityLogin"/>
+        </methods>
+      </class> <!-- com.greekxp.UniversityLogin -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+  <test name="test_chrome(failed)" parallel="tests">
+    <parameter name="OS" value="Ubuntu"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="ANY"/>
+    <classes>
+      <class name="com.greekxp.UniversityLogin">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="testUniversityLogin"/>
+        </methods>
+      </class> <!-- com.greekxp.UniversityLogin -->
+    </classes>
+  </test> <!-- test_chrome(failed) -->
+</suite> <!-- Failed suite [smoke-test-suite] -->
