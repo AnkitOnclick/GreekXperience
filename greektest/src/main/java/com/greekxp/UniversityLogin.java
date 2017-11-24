@@ -7,8 +7,10 @@ import org.testng.Assert;
 import org.testng.annotations.Test;	
 import org.testng.annotations.BeforeTest;	
 import org.testng.annotations.AfterTest;		
-public class UniversityLogin {		
+public class UniversityLogin {	
+	
 	    private WebDriver driver;		
+		
 		@Test				
 		public void testEasy() {	
 			driver.get("http://demo.guru99.com/selenium/guru99home/");  
@@ -21,6 +23,7 @@ public class UniversityLogin {
 		}		
 		@AfterTest
 		public void afterTest() {
-			/*driver.quit();	*/		
+			/*driver.quit();*/
+			
 		}		
 }
