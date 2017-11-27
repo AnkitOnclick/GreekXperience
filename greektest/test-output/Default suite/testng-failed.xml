@@ -5,8 +5,9 @@
     <classes>
       <class name="com.greekxp.UniversityLogin">
         <methods>
-          <include name="setup"/>
-          <include name="testParameterWithXML"/>
+          <include name="tearDown"/>
+          <include name="yUniversityLogin"/>
+          <include name="testUniversityLogin"/>
         </methods>
       </class> <!-- com.greekxp.UniversityLogin -->
     </classes>
