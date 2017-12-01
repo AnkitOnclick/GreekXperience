@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-<suite name="TestSuite" parallel="false" >
-
-<test name="Test">
-
-<classes>
-
-<class name="com.greekxp.UniversityLogin">
-
-</class>
-
-</classes>
-
-</test>
-
-</suite>
+<suite name="GreekXperince Load Testing Suite">
+ <test name="GreekXperince Load Test">
+  <classes>
+   <class name="com.greekxp.TestngMethod" />
+  </classes>
+ </test> <!-- Test -->
+</suite> <!-- Suite -->
